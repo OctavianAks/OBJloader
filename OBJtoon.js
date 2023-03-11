@@ -44,7 +44,7 @@ function init() {
 
 	// model
 const material1 =  new THREE.MeshToonMaterial({ 
-color: 'blue', })
+color: 'grey', })
 
 
 	var loader = new OBJLoader();

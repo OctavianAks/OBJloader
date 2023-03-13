@@ -19,11 +19,7 @@ function init() {
 	container = document.createElement( 'div' );
 	document.body.appendChild( container );
 
-	const controls = new OrbitControls( camera, renderer.domElement );
-
-controls.minDistance = 300;
-        controls.maxDistance = 2000;
-
+	
 
 
 	camera = new THREE.PerspectiveCamera( 25, window.innerWidth / window.innerHeight, 0.01, 10 );
@@ -75,7 +71,11 @@ const material =  new THREE.MeshToonMaterial;                                   
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	container.appendChild( renderer.domElement );
 
-	
+	const controls = new OrbitControls( camera, renderer.domElement );
+
+controls.minDistance = 300;
+        controls.maxDistance = 2000;
+
 
 	//
 
